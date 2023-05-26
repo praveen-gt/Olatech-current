@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -11,17 +11,98 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+    --light-black: #1C1C1C;
+    --global-green-primary: #0C660C;
+    --global-green-light: #48B703;
+    --global-green-secondary: #16A112;
+    --global-orange: #ef710a;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+    --light-black: #1C1C1C;
+    --global-green-primary: #0C660C;
+    --global-green-light: #48B703;
+    --global-green-secondary: #16A112;
+    --global-orange: #ef710a;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: "Now", Sans-serif;
+  color: #000;
+  letter-spacing: -0.0415625em;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.globalButton {
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: fit-content;
+  letter-spacing: 0.3px;
+}
+
+.dummyTitle {
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 1536px) { }
+@media (max-width: 1536px) { }
+@media (max-width: 1280px) { }
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .globalButton {
+    font-size: 16px;
+    padding: 8px 22px;
+  }
+ }
+@media (max-width: 768px) { }
+@media (max-width: 640px) { 
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
 }

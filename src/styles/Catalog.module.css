@@ -1,0 +1,50 @@
+.boxContainer {
+    background: #fff;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #ebebeb;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    /* padding: 30px; */
+    margin: 15px;
+    /* width: 31%; */
+    width: 27%;
+    transition: linear 0.3s all;
+}
+
+.boxContainer:hover {
+    box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.boxContainer:hover::before {
+    background-color: green;
+    /* border: none */
+}
+
+.boxContainer::before {
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    border: 1px dashed #d2d2d2;
+    border-radius: 50%;
+    top: -45px;
+    right: -45px;
+    transition: linear 0.3s all;
+}
+
+.features__text {
+    font-size: 35px;
+    line-height: 36px;
+    color: #e7e7e7;
+    top: 30px;
+    right: 30px;
+    position: absolute;
+}
+
+.container {
+    padding: 30px
+}

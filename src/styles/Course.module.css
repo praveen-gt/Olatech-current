@@ -1,0 +1,62 @@
+.catTitle {
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding-top: 1rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 31px;
+}
+
+.unitHeading {
+    color: #000;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.unitDesc {
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    padding-bottom: 5px;
+}
+
+.tableHead {
+    background-color: #D9EDF7;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-block: 5px;
+    color: #000;
+    margin-bottom: 10px;
+    letter-spacing: 0.2px;
+    padding-left: 8px;
+    /* text-transform: uppercase; */
+}
+
+.coursebanner {
+    background-color: var(--global-green-primary);
+}
+
+.bannerTitle {
+    color: #fff;
+    padding-top: 3em;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.activeTab {
+    background-color: var(--global-green-secondary);
+}
+
+.tabList {
+    border-right: 3px solid #16A112;
+    width: 35%;
+}
+
+.tabPanel {
+    width: 65%;
+}

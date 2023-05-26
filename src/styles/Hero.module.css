@@ -1,0 +1,59 @@
+.herobanner {
+    flex-direction: column;
+    padding: 6em 0;
+}
+
+.heroWidth {
+    flex: 1 1 0;
+}
+
+.herobanner h1 {
+    color: #FFFFFF;
+    font-size: 3.5em;
+    font-weight: 500;
+    line-height: 1.4em;
+    width: 90%;
+}
+
+.buttonWrapper {
+    margin-top: 40px;
+}
+
+.bannerButton {
+    background-color: #48b703;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 12px;
+    width: fit-content;
+    letter-spacing: 0.3px;
+
+}
+
+.heroImage {
+    object-fit: contain;
+    position: absolute;
+    bottom: 0
+}
+
+@media only screen and (max-width: 980px) {
+    
+    .herobanner h1 { 
+       font-size: 2em; 
+    }
+ 
+ }
+
+ @media (min-width: 1536px) { }
+@media (max-width: 1536px) { }
+@media (max-width: 1280px) { }
+@media (max-width: 1024px) {}
+@media (max-width: 768px) { 
+    .heroImage {
+        position: unset;
+    }
+}
+@media (max-width: 640px) {
+
+    
+ }
