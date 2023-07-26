@@ -19,14 +19,14 @@ const images = [{
     alt: "Image 3"
 },
 {
-    id: 3,
+    id: 5,
     src: "/slider_img/6.webp",
     alt: "Image 3"
 },
-{
-    id: 4,
-    src: "/slider_img/4.png",
-    alt: "Image 3"
-}
+// {
+//     id: 6,
+//     src: "/slider_img/4.png",
+//     alt: "Image 3"
+// }
 ];
 export default images;
