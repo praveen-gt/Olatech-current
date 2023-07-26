@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../src/styles/Footer.module.css'
 
-const Footer = () => {
+const Footer = ():JSX.Element => {
     return (
         <div className='container-fluid' style={{
             backgroundColor: 'var(--background-dark-blue)'
@@ -13,14 +13,14 @@ const Footer = () => {
                 <div className="flex footer justify-between lg:w-0 lg:flex-1">
                     <ul>
                         <li>
-                        <Link href={'/'}>
+                            <Link href={'/'}>
                                 <Image
                                     src={'/static/ola-lms-logo-footer.png'}
                                     width={100}
                                     height={100}
                                     alt=''
                                 />
-                                </Link>
+                            </Link>
                         </li>
                     </ul>
                     <ul>
@@ -47,7 +47,7 @@ const Footer = () => {
                     color: '#fff',
                 }}>© Ola Tech {new Date().getFullYear()}. All Rights Reserved.</p>
             </div>
-            </div>
+        </div>
     )
 }
 
