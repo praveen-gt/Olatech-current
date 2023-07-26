@@ -82,12 +82,12 @@ function Menu(props: any) {
                 </div>
                 <div className="desktop-menu hidden text-center lg:flex lg:items-center">
                     <ul className="menu-list items-center justify-end flex-1 pt-6 lg:pt-0 list-reset lg:flex">
-                        {children.map((item, index) => {
+                        {children.map((item:any, index) => {
                             return (
                                 <MenuItem
                                     name={item.props.name}
                                     key={index}
-                                    onClick={() => { }}
+                                    // onClick={() => { }}
                                 >
                                     {item}
                                 </MenuItem>
