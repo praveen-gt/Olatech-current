@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Hero from '../../components/Hero'
+import Hero from '../../Components/Hero'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaRegBuilding, FaCarSide, FaRegCheckCircle } from "react-icons/fa";
 import styles from '../styles/Home.module.css'
-import ImageSlider from '../../components/slider/slider';
-import images from '../../components/slider/images'
-import { Tabs, Tab } from "../../components/tabs";
+import ImageSlider from '../../Components/slider/slider';
+import images from '../../Components/slider/images'
+import { Tabs, Tab } from "../../Components/tabs";
 
 import localFont from 'next/font/local'
 // import SliderItems from '../../components/slider/slider';

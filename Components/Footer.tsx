@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../src/styles/Footer.module.css'
 
-export function Footer() {
+export default function Footer() {
     return (
         <div className='container-fluid' style={{
             backgroundColor: 'var(--background-dark-blue)'

@@ -1,9 +1,9 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-// import { Footer } from '../../components/Footer'
+import Footer  from '../../Components/Footer'
 import Head from 'next/head'
-import { Navbar } from '../../components/menu/Menu'
-import { useState } from 'react'
+import { Navbar } from '../../Components/menu/Menu'
+// import { useState } from 'react'
 
 import localFont from 'next/font/local'
 
@@ -85,7 +85,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   )
 }
