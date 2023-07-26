@@ -1,6 +1,6 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Footer } from '../../components/Footer'
+// import { Footer } from '../../components/Footer'
 import Head from 'next/head'
 import { Navbar } from '../../components/menu/Menu'
 import { useState } from 'react'
