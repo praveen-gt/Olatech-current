@@ -1,12 +1,7 @@
 import '@/styles/globals.css'
-import header from "../styles/header.module.css";
 import type { AppProps } from 'next/app'
-import { Lato } from 'next/font/google'
-// import Navbar from './navbar'
 import Footer from '../../components/Footer'
-
 import Head from 'next/head'
-// import MegaMenuDemo from '../../Components/MegaMenu'
 import { Navbar } from '../../components/menu/Menu'
 import { useState } from 'react'
 
@@ -79,7 +74,7 @@ const graphik = localFont({
 
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [background, setBackground] = useState(false);
+  // const [background, setBackground] = useState(false);
   return (
     <main className={`${graphik.className}`}>
       <Head>
@@ -88,12 +83,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/static/olatech-favicon.png" />
         <link rel="canonical" href="https://olatech.com.au/" />
       </Head>
-      {/* <main className={`${lato.variable} font-sans`}> */}
-      
       <Navbar />
       <Component {...pageProps} />
       <Footer />
-
     </main>
   )
 }
