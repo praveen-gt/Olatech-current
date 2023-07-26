@@ -5,13 +5,11 @@
     margin-bottom: 10px;
 }
 
-.footer_links {
-    font-family: "Lato", Sans-serif;
-    font-size: 20px;
-    color: #A1A1A1;
-    font-weight: 300;
-    padding-bottom: 10px;
-    letter-spacing: 0.2px;
+.footer_links a {
+    font-size: 0.95rem;
+    letter-spacing: 0.1px;
+    color: #fff;
+    opacity: 0.8;
 }
 
 .services_text {
@@ -30,7 +28,41 @@
 
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer ul:first-child {
+    flex-grow: 2;
+}
+.footer ul:not(first-child) {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
 .footer ul li {
     font-size: 1.3rem;
     letter-spacing: 0.2px;
+}
+
+.copyright {
+    padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright p {
+    font-size: 0.9rem;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: white;
+    padding-top: 12px;
+}
+
+.footerIcons {
+    display: flex;
+    margin-top: 1rem;
 }

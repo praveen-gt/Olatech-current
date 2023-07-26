@@ -2,6 +2,12 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../src/styles/Footer.module.css'
+import {
+    AiOutlineInstagram,
+    AiFillLinkedin
+} from "react-icons/ai";
+
+
 
 export default function Footer() {
     return (
@@ -10,7 +16,7 @@ export default function Footer() {
         }}>
             <div className="container mx-auto px-4 sm:px-6 items-center  padding_4  justify-between py-6 md:justify-start md:space-x-10">
 
-                <div className="flex footer justify-between lg:w-0 lg:flex-1">
+                <div className={styles.footer}>
                     <ul>
                         <li>
                             <Link href={'/'}>
@@ -21,6 +27,11 @@ export default function Footer() {
                                     alt=''
                                 />
                             </Link>
+                            <p className={styles.tagline}>some tag line</p>
+                            <div className={styles.footerIcons}>
+                            <AiOutlineInstagram color="#5A6C80" size={30} style={{marginRight: 5 }} />
+                            <AiFillLinkedin color="#5A6C80" size={30}/>
+                            </div>
                         </li>
                     </ul>
                     <ul>
@@ -42,7 +53,10 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className='flex justify-center py-6 copyright'>
+            <div className="container mx-auto">
+                <hr style={{borderTopColor: '#dddddd38'}} />
+            </div>
+            <div className={styles.copyright}>
                 <p style={{
                     color: '#fff',
                 }}>© Ola Tech {new Date().getFullYear()}. All Rights Reserved.</p>
