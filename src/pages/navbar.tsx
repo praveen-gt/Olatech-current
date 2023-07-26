@@ -8,7 +8,7 @@ import { ChevronDownIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
 
 const navigation = [
   {
-    title: "Catalog",
+    title: "Solution",
     path: "#",
     children: [
       { title: "Construction, Plumbing & Services Training Package", path: "construction-plumbing-services-training-package" },
@@ -18,7 +18,7 @@ const navigation = [
     ],
   },
   {
-    title: "LMS",
+    title: "Products",
     path: "#",
     children: [
       { title: "Ola Aspire", path: "ola-aspire-lms" },
@@ -26,16 +26,16 @@ const navigation = [
       { title: "Ola Upskill", path: "ola-upskill-lms" },
     ],
   },
-  {
-    title: "Services",
-    path: "#",
-    children: [
-      { title: "Course Development", path: "course-development-lms" },
-      { title: "Infra and IT", path: "infra-and-it-lms" },
-      { title: "Big Blue Button Integration", path: "lms-big-blue-button-integration" },
-    ],
-  },
-  { title: "About", path: "about" },
+  // {
+  //   title: "Services",
+  //   path: "#",
+  //   children: [
+  //     { title: "Course Development", path: "course-development-lms" },
+  //     { title: "Infra and IT", path: "infra-and-it-lms" },
+  //     { title: "Big Blue Button Integration", path: "lms-big-blue-button-integration" },
+  //   ],
+  // },
+  { title: "Our Company", path: "about" },
   { title: "Contact", path: "contact" },
 ];
 
@@ -43,7 +43,7 @@ export default function NavbarModern() {
   return (
     <>
       <div className="px-3 max-w-screen-xl py-2 mx-auto">
-        <nav className="relative flex flex-wrap items-center justify-between py-6 mx-auto lg:justify-between">
+        <nav className="relative flex flex-wrap items-center justify-between py-3 mx-auto lg:justify-between">
           <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
             <Logo />
             {/* Mobile Menu  */}
@@ -51,8 +51,8 @@ export default function NavbarModern() {
           </div>
 
           {/* Desktop Menu  */}
-          <div className="hidden text-center lg:flex lg:items-center">
-            <ul className="items-center justify-end flex-1 pt-6 lg:pt-0 list-reset lg:flex">
+          <div className="hidden text-center lg:items-center">
+            <ul className="items-center justify-end flex-1 pt-6 lg:pt-0 list-reset">
               <NavItems navigation={navigation} />
             </ul>
             <ActionButtons />
@@ -69,15 +69,19 @@ const Logo = () => {
         <Image
           className="block h-8 w-auto lg:hidden"
           src='/static/OlaTech-Logo.svg'
-          width={100}
-          height={100}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '75%', height: 'auto' }}
           alt="Olatech Logo"
         />
         <Image
           className="hidden w-auto lg:block"
           src='/static/OlaTech-Logo.svg'
-          width={100}
-          height={100}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '75%', height: 'auto' }}
           alt="Olatech Logo"
         />
     </Link>
@@ -134,17 +138,16 @@ const ActionButtons = ({ mobile }:any) => {
   return (
     <div
       className={cx(
-        mobile ? "flex gap-3 mt-2" : "hidden mx-3 gap-3 lg:flex"
+        mobile ? "flex gap-3 mt-2" : "hidden mx-3 gap-3 ml-12 lg:flex"
       )}>
       <Link href="/contact" 
-      className={`globalButton px-5 py-1.5 text-gray-500 rounded-md font-medium`} style={{
+      className={`globalButton px-5 py-1.5 text-gray-500 rounded-md font-semibold `} style={{
         backgroundColor: 'var(--global-green-primary)',
         color:'#fff',
-        fontWeight: '500',
-        border: 'none'
-
+        border: 'none',
+        fontSize: 15
       }}>
-      Request a demo
+    Book a demo
       </Link>
     </div>
   );
@@ -176,7 +179,7 @@ const MenuItem = ({ item, mobile }:any) => {
   return (
     <Link href={item?.path ? item.path : "#"} 
         className={cx(
-          "text-gray-700 dark:text-black font-medium text-lg tracking-normal rounded-md outline-none hover:text-black focus:text-indigo-500  transition-all focus-visible:ring-1 ring-indigo-300 dark:focus-visible:bg-gray-100 focus:outline-none",
+          "text-gray-700 dark:text-black font-semibold text-base tracking-normal rounded-md outline-none hover:text-black focus:text-indigo-500  transition-all focus-visible:ring-1 ring-indigo-300 dark:focus-visible:bg-gray-100 focus:outline-none",
           mobile
             ? "w-full block px-4 py-2 -ml-4"
             : "inline-block px-4 py-2"
@@ -193,7 +196,7 @@ const DropdownMenu = ({ menu, items, mobile }:any) => {
         <>
           <Menu.Button
             className={cx(
-              "flex font-medium text-lg tracking-normal items-center gap-x-1 transition-all rounded-md outline-none focus:outline-none focus-visible:ring-1  focus-visible:text-indigo-500 dark:focus-visible:bg-gray-100",
+              "flex font-semibold text-base tracking-normal items-center gap-x-1 transition-all rounded-md outline-none focus:outline-none focus-visible:ring-1  focus-visible:text-indigo-500 dark:focus-visible:bg-gray-100",
               open
                 ? "text-indigo-500 hover:text-black"
                 : "text-gray-700 dark:text-black hover:text-black",

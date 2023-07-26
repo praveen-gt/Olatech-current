@@ -1,0 +1,12 @@
+.main:hover {
+    cursor: pointer;
+  }
+  
+  .container {
+    padding: 0.5em;
+  }
+  
+  .main[data-background="true"] .container {
+    background-color: var(--dropdown-menu-bg-two);
+  }
+  

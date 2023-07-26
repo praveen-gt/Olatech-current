@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Banner from '../../Components/Banner'
+import Banner from '../../components/Banner'
 import {
     FaCheck,
     FaServer,
