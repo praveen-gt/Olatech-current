@@ -59,10 +59,25 @@
 .tagline {
     font-size: 1rem;
     color: white;
+    opacity: 0.8;
     padding-top: 12px;
+    width: 70%;
 }
 
 .footerIcons {
     display: flex;
     margin-top: 1rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo h2 {
+    color: #47B606;
+}
+
+.logo img {
+    object-fit: contain;
 }

@@ -7,17 +7,25 @@ import "slick-carousel/slick/slick-theme.css";
 const ImageSlider = ({ images }:any) => {
   const settings = {
     dots: false,
-    infinite: true,
-    // speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    // autoplaySpeed: 2500,
-    autoplaySpeed: 0,
-    // centermode: true,
-    speed: 8000,
-    pauseOnHover: false,
-    cssEase: 'linear'
+    speed: 9000, 
+    autoplay: true, 
+    autoplaySpeed: 0, 
+    cssEase: 'linear', 
+    slidesToShow: 4, 
+    slidesToScroll: 1, 
+    ltr: true
+    // variableWidth: true,
+
+    // dots: false,
+    // infinite: true,
+    // slidesToShow: 4,
+    // slidesToScroll: 1,
+    // autoplay: true,
+    // speed: 8000,
+    // pauseOnHover: false,
+    // cssEase: 'linear',
+    // autoplaySpeed: 2000
+    // // cssEase: 'linear'
   };
 
   return (

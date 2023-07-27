@@ -209,11 +209,7 @@ export default function Home() {
               alt=''
             />
             <h3 className='my-4'>Course Developemnt</h3>
-            <p className={` text-gray-400`} style={{
-              fontSize: 16,
-              lineHeight: 1.7,
-              letterSpacing: 0.1
-            }}>We are industry experts in course development. Our team of professionals produces courses by following proper process based on your unique requirements.</p>
+            <p>We are industry experts in course development. Our team of professionals produces courses by following proper process based on your unique requirements.</p>
             <p className='learning--link mt-4'><Link href={'/course-development-lms'}>Know More</Link>
             </p>
           </li>
@@ -229,11 +225,7 @@ export default function Home() {
               alt=''
             />
             <h3 className='my-4'>Infra & IT</h3>
-            <p className={` text-gray-400 ${lato.className}`} style={{
-              fontSize: 16,
-              lineHeight: 1.7,
-              letterSpacing: 0.1
-            }}>We provide all types of technical as well as admin level support that you might need to understand or operate the system.</p>
+            <p>We provide all types of technical as well as admin level support that you might need to understand or operate the system.</p>
             <p className='mt-4 learning--link'><Link href={'/infra-and-it-lms'}>Know More</Link>
             </p>
           </li>
@@ -249,11 +241,7 @@ export default function Home() {
               alt=''
             />
             <h3 className='my-4'>Moodle Hosting</h3>
-            <p className={` text-gray-400 ${lato.className}`} style={{
-              fontSize: 16,
-              lineHeight: 1.7,
-              letterSpacing: 0.1
-            }}>We provide end-to-end moodle hosting and installation services along with the set-up of other software required for its optimal performance on Linux, Windows, and Mac OS servers.</p>
+            <p>We provide end-to-end moodle hosting and installation services along with the set-up of other software required for its optimal performance on Linux, Windows, and Mac OS servers.</p>
             <p className='mt-4 learning--link'><Link href={'/moodle-hosting-lms'}>Know More</Link>
             </p>
           </li>

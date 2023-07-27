@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: 'trump-bold';
-  src: url('../../public/fonts/trump/trump_gothic.ttf');
+  /* src: url('../../public/fonts/trump/trump_gothic.ttf'); */
+  src: url('../../public/fonts/lato/Lato-Regular.ttf');
 }
 
 :root {
@@ -501,9 +502,9 @@ section.learning_section {
 
 /* slider img */
 
-.imgslider {
+/* .imgslider {
   padding-top: 1rem;
-}
+} */
 
 .sliderImg {
   margin-inline: auto;

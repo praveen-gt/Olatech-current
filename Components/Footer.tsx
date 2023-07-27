@@ -6,6 +6,17 @@ import {
     AiOutlineInstagram,
     AiFillLinkedin
 } from "react-icons/ai";
+import localFont from 'next/font/local'
+
+const lato = localFont({
+    src: [
+      {
+        path: '../public/fonts/lato/Lato-Regular.ttf',
+        weight: '400',
+        style: 'normal',
+      },
+    ],
+  });
 
 
 
@@ -19,15 +30,16 @@ export default function Footer() {
                 <div className={styles.footer}>
                     <ul>
                         <li>
-                            <Link href={'/'}>
+                            <Link href={'/'} className={styles.logo}>
                                 <Image
                                     src={'/static/ola-lms-logo-footer.png'}
                                     width={100}
                                     height={100}
                                     alt=''
                                 />
+                                <h2 className={`${lato.className}`}>Tech</h2>
                             </Link>
-                            <p className={styles.tagline}>some tag line</p>
+                            <p className={styles.tagline}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                             <div className={styles.footerIcons}>
                             <AiOutlineInstagram color="#5A6C80" size={30} style={{marginRight: 5 }} />
                             <AiFillLinkedin color="#5A6C80" size={30}/>
